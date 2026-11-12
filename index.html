@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101827">
+  <title>Periodic – Bảng tuần hoàn</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-icon">⚛</div>
+      <div>
+        <h1>Periodic</h1>
+        <p>CHEMISTRY EXPLORER</p>
+      </div>
+    </div>
+    <button id="themeBtn" class="theme-btn">☀</button>
+  </header>
+
+  <main>
+    <section class="intro">
+      <span class="eyebrow">CHEMISTRY • 118 ELEMENTS</span>
+      <h2>Bảng tuần hoàn<br><span>các nguyên tố hóa học</span></h2>
+      <p>Khám phá thế giới nguyên tử.</p>
+    </section>
+
+    <section class="search-area">
+      <input id="searchInput"
+        type="search"
+        placeholder="Tìm tên, ký hiệu hoặc số nguyên tử...">
+      <button id="clearBtn">×</button>
+    </section>
+
+    <section class="filters" id="filters">
+      <button class="filter active" data-filter="all">Tất cả</button>
+      <button class="filter" data-filter="nonmetal">Phi kim</button>
+      <button class="filter" data-filter="noble">Khí hiếm</button>
+      <button class="filter" data-filter="alkali">Kim loại kiềm</button>
+      <button class="filter" data-filter="alkaline">Kiềm thổ</button>
+      <button class="filter" data-filter="transition">Chuyển tiếp</button>
+      <button class="filter" data-filter="metalloid">Á kim</button>
+      <button class="filter" data-filter="halogen">Halogen</button>
+      <button class="filter" data-filter="lanthanoid">Lantan</button>
+      <button class="filter" data-filter="actinoid">Actini</button>
+      <button class="filter" data-filter="post">Kim loại khác</button>
+    </section>
+
+    <section class="legend" id="legend">
+      <span><i class="dot nonmetal"></i>Phi kim</span>
+      <span><i class="dot noble"></i>Khí hiếm</span>
+      <span><i class="dot alkali"></i>Kim loại kiềm</span>
+      <span><i class="dot alkaline"></i>Kiềm thổ</span>
+      <span><i class="dot transition"></i>Chuyển tiếp</span>
+      <span><i class="dot metalloid"></i>Á kim</span>
+      <span><i class="dot halogen"></i>Halogen</span>
+      <span><i class="dot lanthanoid"></i>Lantan</span>
+      <span><i class="dot actinoid"></i>Actini</span>
+      <span><i class="dot post"></i>Kim loại khác</span>
+    </section>
+
+    <section class="table-section">
+      <div class="section-heading">
+        <h3>Periodic table</h3>
+        <span>118 ELEMENTS</span>
+      </div>
+      <div class="table-scroll">
+        <div id="periodicTable" class="periodic-table"></div>
+      </div>
+      <p class="scroll-hint">← Vuốt ngang để xem toàn bộ bảng →</p>
+    </section>
+
+    <section class="detail-section" id="detail">
+      <div class="empty-state">
+        <div>⚛</div>
+        <h3>Chọn một nguyên tố</h3>
+        <p>Chạm vào một ô trong bảng để khám phá thông tin.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>PERIODIC • CHEMISTRY EXPLORER</p>
+    <small>Made for curious minds.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
